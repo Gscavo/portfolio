@@ -1,3 +1,36 @@
-menu[type="toolbar"] {
-    background-color: aqua;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --purple-navy: #424874ff;
+    --bistre: #352208ff;
+    --green-sheen: #81ae9dff;
+    --cedar-chest: #cd5334ff;
+    --macaroni-and-cheese: #edb88bff;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--macaroni-and-cheese);
+}
+
+menu[type="toolbar"] {
+    background-color: var(--purple-navy);
+    font-size: 1rem;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+menu[type="toolbar"]>label {
+    padding: 0 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    color: whitesmoke;
+}
+
+
